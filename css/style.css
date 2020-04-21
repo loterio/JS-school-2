@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* container style */
+.container {
+  padding: 9vh 30vh 0px 40vh;
+}
+div.container h2#top{
+  font-size: 40px;
+  letter-spacing: 4px;
+  padding: 0px 0px 4px 0px;
+  margin: 0px 0px 7vh 0px;
+  border-bottom: 4px solid #000;
+}
+div.container h2#top:hover {
+  transition: 0.34s;
+  border-bottom: 4px solid rgb(63, 63, 158);
+}
+
+/* navbar style */
+nav{
+  padding: 30px 0px 20px 50px;
+  display: flex;
+  font-size: 20px;
+  color: white;
+
+  background-color: rgb(63, 63, 158);
+  
+}
+nav h1, nav h1 strong#brand{font-family: 'Noto Sans', sans-serif;}
+nav h1#guest{padding: 15px 0px 0px 1000px; font-size: 18px;}
+nav h1 strong#brand {
+  background-color: rgba(143, 143, 143, 0.550);
+  padding: 2px 4px 2px 4px;
+  border-radius: 2px;
+}
+nav h1 strong#brand:hover {
+  transition: .34s;
+  background-color: rgb(143, 143, 143);
+}
+
+/* fieldset style */
+fieldset {
+  margin: 10px 60px 7.5px 10px;
+}
+fieldset div.body {
+  padding: 10px 0px 0px 150px;
+}
+fieldset div.body div.act {
+  float: right;
+  padding: 0px 15px 0px 0px;
+}
+fieldset div.body div.act button{width: 20px;}
+fieldset div.body div.act input {width: 30px;}
+
+fieldset img{float: left;}
+

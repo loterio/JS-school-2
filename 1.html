@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>e-commerce</title>
+</head>
+<body>
+
+  <nav>
+    <h1>activity <strong id="brand">#1</strong></h1>
+    <h1 id="guest">visitante</h1>
+  </nav>
+
+  <div class="container">
+    <h2 id="top">Exercício - compra de produtos.</h2>
+
+    <form>
+      <input type="text" name="user" id="user" placeholder="insira seu nome">
+    </form>
+    
+    <input type="submit" value="log in" onclick="changeUser()"><br><br>
+
+    <fieldset>
+      <img src="assets/img/beer.png" alt="Colonia's beer" height="100" border=1px>
+      
+      <div class="body"> 
+        <p class="p-name">Cerveja Colônia Lata</p>
+        <p>R$2.37</p>
+        <div class="act">
+          <button onclick="maxQtd('1')">+</button>
+          <input type="text" name="p-qtd-1" id="p-qtd-1" value="0">
+          <button onclick="lssQtd('1')">-</button>
+          <p>Valor total: <div id="total1"></div></p>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset> 
+      <img src="assets/img/pasoc.png" alt="" height="100" border=1px>
+      <div class="body">
+        <p class="p-name">Caixa Paçoquinha</p>
+        <p>R$7.95</p>
+        <div class="act">
+          <button onclick="maxQtd('2')">+</button>
+          <input type="text" name="p-qtd-2" id="p-qtd-2" value="0">
+          <button onclick="lssQtd('2')">-</button>
+          <p>Valor total: <div id="total2"></div></p>
+        </div>
+      </div>
+    </fieldset>
+    <form>
+      <input type="submit" value="finalizar compra" onclick="thx()">
+    </form>
+    <br><br>
+  </div>
+
+  <script src="1.js"></script>
+</body>
+</html>
